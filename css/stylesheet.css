@@ -1,0 +1,25 @@
+label, textarea {
+  display: block; }
+
+textarea {
+  outline: -webkit-focus-ring-color auto 0;
+  resize: none; }
+  @media screen and (min-width: 1088px) {
+    textarea {
+      width: 50%; } }
+
+textarea#code-input {
+  font-family: monospace;
+  font-size: 16px;
+  padding: 30px;
+  background-color: #eee;
+  border: none;
+  border-radius: 3px; }
+
+button[name="submit-code"] {
+  margin-top: 30px; }
+
+#code-output {
+  height: calc(100% - 50px); }
+
+/*# sourceMappingURL=stylesheet.css.map */

@@ -1,0 +1,38 @@
+$lightGray: #eee;
+$spaceAmount: 30px;
+
+label, textarea {
+  display: block;
+}
+
+textarea {
+  outline: -webkit-focus-ring-color auto 0;
+  // max-width: 100%;
+  // width: 50%;
+  resize: none;
+
+  @media screen and (min-width: 1088px) {
+    width: 50%;
+  }
+}
+
+.box {
+
+}
+
+textarea#code-input {
+  font-family: monospace;
+  font-size: 16px;
+  padding: $spaceAmount;
+  background-color: $lightGray;
+  border: none;
+  border-radius: 3px;
+}
+
+button[name="submit-code"] {
+  margin-top: $spaceAmount;
+}
+
+#code-output {
+  height: calc(100% - 50px);
+}
