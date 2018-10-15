@@ -5,25 +5,33 @@
 
   <link rel="stylesheet" href="css/bulma.min.css">
   <link rel="stylesheet" href="css/stylesheet.css">
-  <title>Query Params Visualizer</title>
+
+  <link rel="icon" href="images/query_icon.ico">
+  <title>Parameterizer</title>
 </head>
 
 <body>
   <div class="section">
     <div class="container">
-      <h1 class="title">Query Params Visualizer</h1>
+      <div class="container header">
+        <h1 class="title">Parameterizer</h1>
+        <h2 class="subtitle">Object to Query Params Visualizer</h1>
+      </div>
 
       <div class="columns">
-        <div class="code-wrapper column">
+        <div class="column is-half">
           <h3 class="subtitle">Your code here</h3>
-          <textarea name="js-object-input" rows="8" cols="80" id="code-input"></textarea>
+          <textarea name="js-object-input" rows="8" cols="80" id="code-input" autofocus placeholder='{ my: "javascript object" }'></textarea>
 
-          <button type="button" name="submit-code" class="button is-pulled-right">Transform</button>
+          <button type="button" id="clear-code" class="button is-pulled-right">Clear</button>
+          <button type="button" id="submit-code" class="button is-primary is-pulled-right">Transform</button>
         </div>
 
-        <div class="output-wrapper column">
+        <div class="column is-half">
           <h3 class="subtitle">Output here</h3>
-          <div name="object-output" class="box" id="code-output"></div>
+          <div name="object-output" class="box" id="code-output">
+            ?my=javascript%20object
+          </div>
         </div>
       </div>
     </div>

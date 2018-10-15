@@ -8,8 +8,13 @@ function toParamString(input) {
 $(document).ready(function(){
   var output = $("div[name='object-output']");
 
-  $("button[name='submit-code']").on("click", function(e){
+  $("button#submit-code").on("click", function(e){
     var codeResult = evalCode();
     $(output).text(toParamString(codeResult));
+  });
+
+  $("button#clear-code").on("click", function(e){
+    $("#code-input").val("");
+    $(output).text("");
   });
 });
